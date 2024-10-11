@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register_std2</title>
+    <link rel="stylesheet" href="reg_stu2.css">
+</head>
+<body>
+        <!-- Header Section -->
+        <div class="header">
+            <div class="lg">
+                <span class="logo">
+                    <img width="55" src="\A2U\assets\LOGOm-removebg-preview.png" alt="logo">
+                </span>
+                <span class="name">Alumni-2-Undergrad</span>
+            </div>
+        </div>
+        <!-- Registration Form -->
+        <div class="form-container">
+            <h2>College Details</h2>
+            <form action="submit_form.php" method="POST">
+                <!-- College Name Dropdown -->
+                <div class="form-group">
+                    <label for="college">College Name:</label>
+                    <select id="college" name="college" required>
+                        <option value="">Select a college</option>
+                        <option value="college1">College 1</option>
+                        <option value="college2">College 2</option>
+                        <option value="college3">College 3</option>
+                        <option value="college4">College 4</option>
+                    </select>
+                </div>
+    
+                <!-- Year of Graduation Input -->
+                <div class="form-group">
+                    <label for="grad-year">Year of Graduation:</label>
+                    <input type="text" id="grad-year" name="grad-year" placeholder="e.g., 2024" required>
+                </div>
+    
+                <!-- Course of Study Dropdown -->
+                <div class="form-group">
+                    <label for="course">Course of Study:</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="mtech">M.Tech</option>
+                        <option value="arch">Architecture</option>
+                        <option value="bca">BCA</option>
+                        <option value="mca">MCA</option>
+                    </select>
+                </div>
+                <div class="form-group2"></div>
+                    <label for="course">Department:</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="mtech">M.Tech</option>
+                        <option value="arch">Architecture</option>
+                        <option value="bca">BCA</option>
+                        <option value="mca">MCA</option>
+                    </select>
+                
+    
+                <!-- Student ID Input -->
+                <div class="form-group">
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student-id" placeholder="Enter your Student ID" required>
+                </div>
+    
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </div>
+        </form>
+        

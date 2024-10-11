@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register_std</title>
+    <link rel="stylesheet" href="reg_alu.css">
+</head>
+<body>
+        <!-- Header Section -->
+        <div class="header">
+            <div class="lg">
+                <span class="logo">
+                    <img width="55" src="\A2U\assets\LOGOm-removebg-preview.png" alt="logo">
+                </span>
+                <span class="name">Alumni-2-Undergrad</span>
+            </div>
+        </div>
+    
+           <!-- Registration Form -->
+    <div class="container">
+        <div class="registration-form">
+            <h2>Alumni Registration</h2>
+            <form action="/submit" method="POST">
+                <!-- Name Section -->
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <div class="adjacent-fields">
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                
+                <!-- Email and Mobile Section -->
+                <div class="input-group">
+                    <label for="contact">Email and Mobile Number</label>
+                    <div class="adjacent-fields">
+                        <input type="email" id="email" name="email" placeholder="Email ID" required>
+                        <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+                    </div>
+                </div>
+                
+                <!-- Date of Birth -->
+                <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <!-- City Section -->
+                <div class="input-group">
+                    <label for="city">City (Rajasthan)</label>
+                    <select id="city" name="city" required>
+                        <option value="">Select a city</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Jodhpur">Jodhpur</option>
+                        <option value="Udaipur">Udaipur</option>
+                        <option value="Ajmer">Ajmer</option>
+                        <option value="Kota">Kota</option>
+                        <option value="Bikaner">Bikaner</option>
+                        <option value="Alwar">Alwar</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="input-group btn-group">
+                    <button type="button" class="btn back-btn" onclick="window.history.back();">Back</button>
+                    <button type="submit" class="btn submit-btn">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+    </html>

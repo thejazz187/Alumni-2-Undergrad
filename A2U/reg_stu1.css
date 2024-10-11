@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styling */
+.header{
+    width: 100%;
+    background-color: #2b4257;
+    justify-content: center;
+    position:absolute; 
+    top: 0;
+}
+.lg {
+    z-index:10;
+}
+.name{
+    font-family:"Baloo Bhai 2";
+    font-size: 23px;
+    font-weight: 600;
+    justify-content: center;
+    color:#FFFFFF;
+    z-index: 10;
+    position: relative;
+    bottom: 20px;  /*to check allnmnt beside logo */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 226, 240, 0.5);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Form styling */
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.adjacent-fields {
+    display: flex;
+    gap: 15px;
+}
+
+.adjacent-fields input {
+    width: 100%;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group input:focus, 
+.input-group select:focus {
+    border-color: #00e2f0;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 226, 240, 0.3);
+}
+
+/* Button styling */
+.btn-group {
+    display: flex;
+    gap: 40px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+.back-btn {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #00e2f0;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styling */
+.header {
+    width: 100%;
+    background-color: #2b4257;
+    justify-content: center;
+    position: absolute; 
+    top: 0;
+}
+.lg {
+    z-index: 10;
+}
+.name {
+    font-family: "Baloo Bhai 2";
+    font-size: 23px;
+    font-weight: 600;
+    justify-content: center;
+    color: #FFFFFF;
+    z-index: 10;
+    position: relative;
+    bottom: 20px;  /* Adjust alignment beside logo */
+}
+
+/* Form container styling */
+.form-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Start from the top */
+    align-items: stretch; /* Stretch to fill the container */
+    width: 100%;
+    max-width: 600px; /* Fixed max-width for better layout */
+    margin-top: 100px; /* Space from the top */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 226, 240, 0.5);
+    height: auto; /* Allow it to expand based on content */
+}
+
+/* Heading styling */
+h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+    flex-grow: 1; /* Allow form groups to grow */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and select styling */
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 12px; /* Increase padding for better touch targets */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px; /* Increase padding for better touch targets */
+    background-color: #00e2f0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
