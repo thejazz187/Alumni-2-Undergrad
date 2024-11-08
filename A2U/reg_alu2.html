@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register_std2</title>
+    <link rel="stylesheet" href="reg_alu2.css">
+</head>
+<body>
+        <!-- Header Section -->
+        <div class="header">
+            <div class="lg">
+                <span class="logo">
+                    <img width="55" src="\A2U\assets\LOGOm-removebg-preview.png" alt="logo">
+                </span>
+                <span class="name">Alumni-2-Undergrad</span>
+            </div>
+        </div>
+        <!-- Registration Form -->
+        <div class="form-container">
+            <h2>Alumni Details</h2>
+            <form action="#" method="POST">
+                <label for="degree">Degree/Program</label>
+                <input type="text" id="degree" name="degree" placeholder="Enter your degree" required>
+    
+                <div class="two-columns">
+                    <div class="column">
+                        <label for="occupation">Current Occupation</label>
+                        <input type="text" id="occupation" name="occupation" placeholder="Your current occupation" required>
+                    </div>
+                    <div class="column">
+                        <label for="expertise">Area of Expertise</label>
+                        <input type="text" id="expertise" name="expertise" placeholder="Your area of expertise" required>
+                    </div>
+                </div>
+    
+                <label for="location">Location (City/Country)</label>
+                <input type="text" id="location" name="location" placeholder="City, Country" required>
+    
+                <div class="two-columns">
+                    <div class="column">
+                        <label for="linkedin">LinkedIn Profile</label>
+                        <input type="url" id="linkedin" name="linkedin" placeholder="LinkedIn URL">
+                    </div>
+                    <div class="column">
+                        <label for="instagram">Instagram Profile</label>
+                        <input type="url" id="instagram" name="instagram" placeholder="Instagram URL">
+                    </div>
+                </div>
+    
+                <label for="message">Help us know more about You!</label>
+                <input type="text" id="message" name="message" maxlength="60" placeholder="Share a brief message (60 characters)" required>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+    </body>
+    </html>

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Sidebar styles */
+.sidebar-left {
+    background-color: #ffffff;
+    width: 280px;
+    padding: 20px 30px;
+    border-right: 1px solid #dbdbdb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.sidebar-left .lg {
+    z-index: 10;
+    padding-top: 20px;
+}
+
+.sidebar-left .name {
+    font-family: 'Baloo Bhai 2';
+    font-size: 17px;
+    font-weight: 600;
+    color: #000000;
+    position: relative;
+    bottom: 20px;
+}
+
+.sidebar-left nav ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.sidebar-left nav ul li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #000000;
+    cursor: pointer;
+    border-bottom: 1px solid #55555548;
+
+}
+
+.sidebar-left nav ul li:hover {
+    background-color: #6c8a8a67;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 280px; /* To account for the fixed sidebar width */
+    padding: 20px;
+}
+
+/* Cover photo styles */
+.cover-photo {
+    width: 100%;
+    height: 250px;
+    background: #d5d6d4;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.greeting {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.description {
+    font-size: 12px;
+    margin-bottom: 40px; /* Adjusted to create space for the profile picture */
+    color: #0b0b0b;
+}
+
+/* Profile picture style */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    background-color: #9b9b9b;
+    transform: translateY(50%);
+}
+
+/* Username styling */
+.username {
+    position: absolute;
+    bottom: -3px;
+    left: 230px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.clg {
+    position: absolute;
+    bottom: -20px;
+    left: 230px;
+    font-size: 13px;
+    color: #000000;
+}
+
+/* Flex container for Bio and User Details */
+.info-section {
+    display: flex;
+    margin-top: 160px; /* Increased to create more space from the cover photo */
+    justify-content: space-between;
+
+}
+
+/* User Details Box */
+.user-details-box {
+    width: 650px; /* Adjust width as needed */
+    background-color: #;
+    padding: 20px;
+    border-radius: 8px;
+
+    color: #333;
+}
+
+/* Adjustments for User Details Box Header */
+.user-details-box h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #377898; /* Matches your sidebar item color */
+}
+
+/* Style for User Details List */
+.details-list {
+    list-style-type: none;
+    padding-left: 0; /* Remove default padding */
+}
+
+.details-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.details-list li strong {
+    color: #000; /* Stronger emphasis on labels */
+    font-weight: 600;
+}
+
+/* Bio Section */
+.bio {
+    width: 500px; /* Adjust width as necessary */
+    background-color: #ffffff; /* Ensure background contrasts with details box */
+    padding: 20px;
+    border-radius: px;
+    border-left: 1px solid #333;
+    height: fit-content; /* Adjust height based on content */
+}
+
+.bio h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bio p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Posts section styling */
+.posts-section {
+    margin-top: 30px; /* Space between info section and posts */
+    background-color: #;
+    padding: 20px; /* Added padding for aesthetics */
+    border-top: 1px solid #555;
+}
+
+.post-upload {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #22fab9;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-container {
+    width: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.post-container img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}

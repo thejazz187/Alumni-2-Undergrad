@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserProfile2</title>
+    <link rel="stylesheet" href="UserProfile2.css">
+</head>
+<body>  
+        <div class="container">
+           <!-- Left Sidebar -->
+            <div class="sidebar-left">
+                <div class="logo">
+                    <div class="lg">
+                        <span class="logo">
+                            <img width="55" src="\A2U\assets\LOGOm-removebg-preview.png" alt="logo">
+                        </span>
+                        <span class="name">Alumni-2-Undergrad</span>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Search</li>
+                        <li>Job Portal</li>
+                        <li>Notifications</li>
+                        <li>EventPulse</li>
+                        <li>NewsHub</li>
+                        <li>Posts</li>
+                        <li>My Profile</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-content">
+                <div class="cover-photo">
+                    <h1 class="greeting">Hello [Name]</h1>
+                    <p class="description">This is your profile page. You can see the progress you’ve made with your work.</p>
+                    <div class="profile-pic" style="background-image: url('your-profile-image.jpg');"></div>
+                    <div class="username">Your Username</div>
+                    <div class="clg">BMS Institute of Technology & Management</div>
+                </div>
+    
+                <!-- Flex container for Bio and User Details -->
+            <div class="info-section">
+                <div class="user-details-box">
+                    <h3>User Details</h3>
+                    <ul class="details-list">
+                        <li><strong>Email ID:</strong> user@example.com</li>
+                        <li><strong>Phone Number:</strong> +91 xxxxxxxxxxx</li>
+                        <li><strong>Current Year:</strong> e.g., 3rd Year</li>
+                        <li><strong>Department:</strong> Your Department</li>
+                        <li><strong>Address:</strong> 123, Street, City, State</li>
+                    </ul>
+                </div>
+
+                <div class="bio">
+                    <h3>Quick Bio!</h3>
+                    <p>This is a brief bio about you, where you can highlight your personal or professional details. Tell visitors a little more about your journey!</p>
+                </div>
+            </div>
+
+            <div class="posts-section">
+                <div class="post-upload">
+                    <input type="file" id="file-upload" accept="image/*" />
+                    <label for="file-upload" class="upload-label">Upload New Post</label>
+                </div>
+        
+                <!-- Infinite scrolling container for posts -->
+                <div id="post-container" class="post-container">
+                    <!-- Dynamically loaded posts (images) will appear here -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </body>
+    </html>
+    
+        

@@ -2,83 +2,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
 
-*{
+/* Apply global styles */
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;  /* Prevent overflow due to padding and borders */
     font-family: 'Poppins', sans-serif;
 }
 
-.main{
-    background-image: url("assets/WhatsApp\ Image\ 2024-10-10\ at\ 00.44.55_5c919ef8.jpg");
+html, body {
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+}
+
+/* Main section */
+.main {
+    background-image: url("assets/hmpg.jpg");
     background-position: center center;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 744px;
     position: relative;
-    
+    width: 100vw; /* Ensure it doesn't exceed viewport width */
 }
-.main .box{
+
+/* .box styles */
+.main .box {
     height: 744px;
-    width: 100%;
+    width: 100%;  /* Full width but prevent overflow */
     opacity: 0.90;
     position: absolute;
     top: 0;
     background-color: black;
-
 }
 
-nav{
-    max-width: 80vw;
+/* Ensure nav doesn't exceed viewport */
+nav {
+    max-width: 80vw;  /* Ensure it doesn't cause overflow */
     margin: auto;
-    justify-content:space-between;
-    display:flex;
+    justify-content: space-between;
+    display: flex;
     align-items: center;
     height: 77px;
 }
+
+/* Logo at the top left */
 .lg {
-    z-index:10;
+    position: relative;  /* Position the logo absolutely */
+    left: 0;  /* Align it to the left */
+    top: 0;  /* Align it to the top */
+    z-index: 10;
+    max-width: 100%;  /* Ensure the logo doesn't exceed the container width */
+    max-height: 77px; /* Set a height that matches the navbar height */
+    object-fit: contain;
 }
-.name{
-    font-family:"Baloo Bhai 2";
+
+/* The rest of the navbar styles */
+.name {
+    font-family: "Baloo Bhai 2";
     font-size: 23px;
     font-weight: 600;
     justify-content: center;
-    color:#FFFFFF;
+    color: #FFFFFF;
     z-index: 10;
     position: relative;
-    bottom: 20px;  /*to check allnmnt beside logo */
+    bottom: 20px;
 }
-.lang{
-    z-index: 10; 
-    width: 93px;               /* Set the width */
-    padding: 5px;              /* Padding inside the select box */
-    border: 1px solid #FFFFFF;  /* Border color and thickness */
-    border-radius: 5px;         /* Rounded corners */
-    background-color: #0C0424;  /* Background color */
-    color: #FFFFFF;                /* Text color */
-    font-size: 16px;            /* Font size */
-    outline: none;              /* Remove the default outline */
-    appearance: none;
-    opacity:0.69 ;           /* Remove the default arrow (for WebKit browsers) */
-    cursor: pointer; 
-    
 
+.lang {
+    z-index: 10;
+    width: 93px;
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: #0C0424;
+    color: #FFFFFF;
+    font-size: 16px;
+    outline: none;
+    appearance: none;
+    opacity: 0.69;
+    cursor: pointer;
 }
+
 .langl:hover {
-    background-color: #e0e0e0;  /* Lighter background on hover */
-    border-color: #0056b3;      /* Darker border on hover */
+    background-color: #e0e0e0;
+    border-color: #0056b3;
 }
+
 .b1:hover {
-    background-color: #5ce1e6;  /* Lighter background on hover */
-    border-color: #0056b3; 
-    cursor: pointer     /* Darker border on hover */
+    background-color: #5ce1e6;
+    border-color: #0056b3;
+    cursor: pointer;
 }
+
 .b2:hover {
-    background-color: #5ce1e6;  /* Lighter background on hover */
-    border-color: #0056b3; 
-    cursor: pointer     /* Darker border on hover */
-    
+    background-color: #5ce1e6;
+    border-color: #0056b3;
+    cursor: pointer;
 }
+
 .b1 {
     position: relative;
     z-index: 10;
@@ -89,8 +110,8 @@ nav{
     background-color: #0C0424;
     color: #FFFFFF;
     font-size: 14px;
-
 }
+
 .b2 {
     position: relative;
     z-index: 10;
@@ -101,51 +122,51 @@ nav{
     background-color: #0C0424;
     color: #FFFFFF;
     font-size: 14px;
-
 }
-.moto{
+
+.moto {
     font-family: 'Martel Sans', sans-serif;
     top: 88px;
     height: 150px;
     justify-content: center;
     align-items: center;
-    position:relative;
+    position: relative;
     color: #5ce1e6;
     flex-direction: column;
     display: flex;
     line-height: 1;
     font-size: 49px;
     font-weight: 900;
-
-
 }
-.info{
+
+.info {
     top: 88px;
-    position:relative;
-    text-align:center;
-    margin:px;
+    position: relative;
+    text-align: center;
+    margin: px;
     color: #FFFFFF;
     flex-direction: column;
     display: flex;
     padding: px;
     font-size: 18px;
-    
 }
-pre{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+pre {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: ;
 }
-.start{
-    position:relative;
+
+.start {
+    position: relative;
     top: 95px;
     padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    
 }
-.gs{
+
+.gs {
     position: relative;
     z-index: 10;
     height: 50px;
@@ -153,12 +174,13 @@ pre{
     padding: 5px;
     border: 1px solid #5ce1e6;
     border-radius: 11px;
-    background-color:#5ce1e6;
+    background-color: #5ce1e6;
     color: #FFFFFF;
     font-size: 19px;
     color: #0C0424;
 }
-.au{
+
+.au {
     position: relative;
     z-index: 10;
     height: 50px;
@@ -166,26 +188,28 @@ pre{
     padding: 5px;
     border: 1px solid #5ce1e6;
     border-radius: 11px;
-    background-color:#0C0424;
-    opacity: 0.70;
+    background-color: #0C0424;
+    opacity: 0.50;
     color: #FFFFFF;
     font-size: 19px;
     color: #FFFFFF;
 }
+
 .gs:hover {
-    background-color: #0C0424;  /* Lighter background on hover */
-    border-color: #0056b3; 
+    background-color: #0C0424;
+    border-color: #0056b3;
     color: #5ce1e6;
-    cursor: pointer     /* Darker border on hover */
+    cursor: pointer;
 }
+
 .au:hover {
-    background-color: #5ce1e6;  /* Lighter background on hover */
-    border-color: #0056b3; 
-    color:#0C0424;
-    cursor: pointer     /* Darker border on hover */
-    
+    background-color: #5ce1e6;
+    border-color: #0056b3;
+    color: #0C0424;
+    cursor: pointer;
 }
-.title{
+
+.title {
     position: relative;
     text-align: center;
     top: 0px;
@@ -193,30 +217,30 @@ pre{
     background-color: #dcdcdc;
     font-size: 55px;
     height: 60px;
-
 }
-.feature{
+
+.feature {
     height: 1970px;
     background-color: #dcdcdc;
     position: relative;
     top: 0px;
     padding: 50px;
-    padding-left: 195px;
-    padding-right: 195px;
+    padding-left: 220px;
+    padding-right: 220px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-direction: column;
     justify-items: center;
-
 }
-.profile{
+
+.profile {
     width: 500px;
     position: relative;
     background-image: url(assets/profile\ final.png);
     background-position: center center;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     background-size: cover;
-    
+    flex-direction: column;
     color: #dcdcdc;
     height: 750px;
     padding: 20px;
@@ -225,7 +249,49 @@ pre{
     border-radius: 23px;
     display: flex;
 }
-.fbox{
+
+.bhalf {
+    z-index: 10;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-right: 140px;
+    color: #FFFFFF;
+}
+
+.underline-effect {
+    position: relative;
+    color: #00e2f0;
+    font-weight: 600;
+    font-style: italic;
+    background-color: #0C0424;
+}
+
+/* Create the underline with ::after */
+.underline-effect::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f0c200;
+    transform: scaleX(0.2);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+
+/* Add hover effect to animate underline */
+.underline-effect:hover::after {
+    transform: scaleX(1.2);
+    transform-origin: bottom left;
+}
+
+.fbox {
     width: 500px;
     opacity: 0.4;
     position: absolute;
@@ -234,15 +300,15 @@ pre{
     height: 750px;
     border-radius: 23px;
     padding: 20px;
-    
 }
-.pu{
+
+.pu {
     z-index: 10;
     font-size: 40px;
     color: #FFFFFF;
-
 }
-.webinar{
+
+.webinar {
     width: 500px;
     position: relative;
     background-color: #0C0424;
@@ -252,29 +318,31 @@ pre{
     position: relative;
     border: #e23131bc;
     border-radius: 23px;
-    
 }
-.row, .row2{
+
+.row, .row2 {
     display: flex;
-    justify-content: space-between; /* Align boxes side by side */
-/* Space between adjacent boxes */
+    justify-content: space-between;
 }
-.job{
+
+.job {
     width: 97%;
     position: relative;
-    background-color:#050111;
+    background-color: #050111;
     color: #dcdcdc;
     height: 300px;
     padding: 20px;
+    margin-bottom: 20px;
     position: relative;
     border: #e23131bc;
-    border-radius: 23px;    
+    border-radius: 23px;
 }
+
 .nw{
     width: 500px;
     position: relative;
     background: linear-gradient(to bottom, #00e2f0, #70f58a);
-
+    flex-direction: column;
     color: #dcdcdc;
     height: 720px;
     padding: 20px;
@@ -282,6 +350,30 @@ pre{
     border: #e23131bc;
     border-radius: 23px;
     display: flex;
+}
+/* Style for the top half */
+.top-half {
+    height: 50%;          /* Take up half of the container's height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    align-items: flex-start;
+    padding-top: 20px;
+    color: #FFFFFF;
+   
+}
+
+/* Style for the bottom half */
+.bottom-half {
+    height: 70%;          /* Take up the other half */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-image: url(assets/network-gif-unscreen.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .security{
     width: 500px;
@@ -299,34 +391,168 @@ pre{
     border-radius: 23px;
     display: flex;
 }
-.list{
+
+
+.table-container {
+    display: block;  /* Ensure the table container is a block element */
+    margin-top: 0;    /* Remove any margin above the table */
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto; /* Center the container horizontally */
+    width: 90%;        /* Adjust the container width if necessary */
+}
+
+table {
+    border-collapse: collapse;  /* Merge the borders of the table cells */
+    width: 100%;  /* Ensure the table takes the full width of its container */
+}
+
+th, td {
+    text-align: center;  /* Center content inside cells */
+    padding: 10px; /* Remove padding to allow the image to fill the cell */
+    width: 33.33%; /* Make sure each cell takes up equal width (3 cells per row, adjust as needed) */
+    height: 200px;  /* Set a fixed height for all cells */
+}
+
+.cimg {
+    width: 100%;  /* Make image take up the full width of the cell */
+    height: 100%;  /* Make image take up the full height of the cell */
+    object-fit:scale-down;  /* Ensure the image fills the cell without distortion */
+}
+
+.clist {
     position: relative;
-    text-align: justify;
-    color:#eeacac;
-    background-color: #1c0303;
+    text-align: center;  /* Center the text horizontally */
+    color: #000000;  /* Text color */
+
+    padding-bottom: 25px;  /* Padding around the heading */
+    padding-top: 15px;
+    height: auto;  /* Auto-adjust height based on content */
+}
+
+.ef{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    padding-left: 140px;
+    padding-right: 140px;
+    justify-content: space-between;
+    background-color: #dcdcdc;
+    gap: 40px;
+    padding-bottom: 120px ;
+}
+.rows1,.rows2,.rows3,.rows4 {
+    background-color: #ffffff; /* Row background color */
+    border-radius: 15px;
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding for each row */
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;  /* Use Flexbox to align columns side by side */
+    width: 100%;   /* Total width of the container */
+    height: 300px;  /* Height of the container */
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.left-column {
+    width: 58%;   /* Take 48% of the container width */
+    background-color: #ffffff;  /* Light green background */
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 30px;
+    text-align: center;  /* Center text inside the column */
+    box-sizing: border-box;
+}
+.right-column {
+    width:38%;  /* Take 48% of the container width */
+    background-color: #ffffff;  /* Light green background */
+    padding: 20px; 
+    padding-left: 10px;
+    padding-right: 10px; /* Padding inside the column */
+    text-align: center;  /* Center text inside the column */
+    box-sizing: border-box;
+}
+.left-columni {
+    width: 38%;  /* Take 48% of the container width */
+    background-color: #ffffff;  /* Light green background */
+    border-radius: 5px;
+    text-align: center;  /* Center text inside the column */
+    display: flex;
+}
+.left-columni img {
+    width: 100%;
+    height: auto;
+    object-fit:scale-down; /* Fits the image inside the box, cropping if necessary */
+    border-radius: 5px;
+}
+.right-columni {
+    width: 58%;  /* Take 48% of the container width */
+    background-color: #ffffff;  /* Light green background */
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 30px;  /* Padding inside the column */
+    text-align: center;  /* Center text inside the column */
+    border-radius: 5px;  /* Border around the column */
+    justify-content: center;
+}
+.right-column img {
+    width: 100%;
+    height: auto;
+    object-fit:scale-down; /* Fits the image inside the box, cropping if necessary */
+    border-radius: 5px;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    font-size: 40px;
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 300px;
 }
-.list1{
-    position: relative;
-    text-align: justify;
-    color:#242424;
-    background-color: #e5e5e5;
-    text-align: center;
-    font-size: 40px;
-    padding: 15px;
-    height: 300px;
-}
-.honor{
-    background-color: #242424;
-    margin: 5;
-    width: 50%;
-    height: 100px;
-    
+
+.footer-content {
+    max-width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 10px;
+    min-width: 150px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-right a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+.footer-right a img {
+    width: 50px; /* Adjust this size as needed */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 8px; /* Spacing between icons */
+}
 
 
+.footer-right a:hover {
+    transform: scale(1.7);
+}
 

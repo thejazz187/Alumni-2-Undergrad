@@ -34,10 +34,12 @@ nav{
 /* Body styling */
 body {
 
-    background: radial-gradient(circle, 
-                #020227 50%,    /* Red at the center */
-                #022b2e 100%,   /* Green halfway */
-                #3b0339 50%);  /* Blue at the edges */ /* Dark background */
+    background: radial-gradient(
+    circle,
+    #02385b 15%,     /* Deep sky blue */
+    #011f3d 75%,     /* Dark ocean blue */
+    #000f24 100%     /* Very deep navy blue at the edges */
+);
     color: #c9d1d9; /* Light text */
     min-height: 100vh;
     display: flex;
@@ -65,7 +67,7 @@ body {
 .welcome-container h1 {
 
     font-size: 55px;
-    color: #58a6ff;
+    color: #7cf0f7;
     margin-bottom: 10px;
 }
 
@@ -118,10 +120,11 @@ label {
     position: relative; /* Position the label for absolute positioning of the box */
     padding: 10px 20px; /* Add padding around the label */
     margin-right: 15px; /* Space between each label */
-    border: 2px solid #007BFF; /* Border color */
+    color: #a0ecef; /* Text color */
+    border: 2px solid ; /* Border color */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Change cursor to pointer */
-    color: #007BFF; /* Text color */
+    color: #a0ecef; /* Text color */
     transition: background-color 0.2s, color 0.3s; /* Smooth transition for hover effects */
 }
 
@@ -134,14 +137,14 @@ label {
 
 /* Optional: Change background on hover */
 .form-group label:hover {
-    background-color: #f0f0f0; /* Light background on hover */
+    background-color: #062c34; /* Light background on hover */
 }
 
 
 /* Button styling */
 .submit-btn {
     width: 100%;
-    background-color: #024f54;
+    background-color: #0e8d96;
     border: none;
     color: white;
     padding: 12px;

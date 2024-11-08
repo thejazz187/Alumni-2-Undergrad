@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+    <link rel="stylesheet" href="createpp.css">
+</head>
+<body>
+    <div class="header">
+        <div class="lg">
+            <span class="logo"><img width="55" src="\A2U\assets\LOGOm-removebg-preview.png" alt="logo"></span>
+            <span class="name">Alumni-2-Undergrad<span>
+        </div>
+</div>
+    <div class="container">
+        <div class="profile-container">
+            <h1>Create your Profile</h1>
+            
+            <!-- Profile Picture Section -->
+            <div class="profile-photo">
+                <img id="profile-pic" src="\A2U\assets\blank-profile-picture-973460_960_720.webp" alt="Profile Photo">
+                <button class="change-photo-btn" onclick="document.getElementById('file-input').click();">CHANGE PHOTO</button>
+                <input type="file" id="file-input" style="display: none;" accept="image/*" onchange="previewImage(event)">
+            </div>
+
+            <!-- Form Section -->
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="title">Username</label>
+                    <input type="text" id="title" placeholder="Enter your Username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="organization">Organization:</label>
+                    <input type="text" id="organization" placeholder="Enter your organization" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile-phone">Mobile Number:</label>
+                    <input type="tel" id="mobile-phone" placeholder="xxxxxxxxxxx" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="button-group">
+                    <button class="cancel-btn">Cancel</button>
+                    <button class="save-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function previewImage(event) {
+            const image = document.getElementById('profile-pic');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        }
+    </script>
+</body>
+</html>
