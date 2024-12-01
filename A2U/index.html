@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME_PAGE</title>
     <link rel="stylesheet" href="styling.css">
+    
 </head>
 <body>
     <div class="main">
@@ -18,8 +19,8 @@
                         <option value="English"> English</option>
                         <option value="Hindi">Hindi</option>
                     </select>
-                    <button class="b1">Login</button>
-                    <button class="b2">Sign Up</button>
+                    <button class="b1" id="login">Login</button>
+                    <button class="b2" id="getStarted">Sign Up</button>
                 </div>
             </nav>
     
@@ -33,10 +34,19 @@
                 <p><pre>Having a hard time in connecting with your seniors? Want career help and mentorship?</pre><pre>Looking for placements and financial donations for your project?</pre> <pre>Then here's A2U to help you in engagement opportunities</pre> <pre>with targeted connections amongst the alumni/ student and the institutions.</pre></p>
             </div>
             <div class="start">
-                <button class="gs">Get Started</button>
+                <button class="gs" id="getStarted">Get Started</button>
                 <button class="au">About Us</button>
             </div>
     </div> 
+    <script>
+        // JavaScript for redirection
+        document.getElementById("getStarted").addEventListener("click", function () {
+            window.location.href = "welome.html"; 
+        });
+        document.getElementById("login").addEventListener("click", function () {
+            window.location.href = "login.html"; 
+        });
+    </script> 
 
             <div class="c1">
                 <h1 class="title">Discover What We Offer</h1>
@@ -140,6 +150,6 @@
     </div>
 </footer>
        
-    
+  
 </body>
 </html>

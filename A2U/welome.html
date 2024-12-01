@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welome_Page</title>
+    <title>Welcome_Page</title>
     <link rel="stylesheet" href="welome.css">
 </head>
 <body>
     <nav>
         <div class="lg">
-        <span class="logo"><img width="55" src="\A2U\assets\LOGOm-removebg-preview.png" alt="logo"></span>
-        <span class="name">Alumni-2-Undergrad<span>
+            <span class="logo"><img width="55" src="\A2U\assets\LOGOm-removebg-preview.png" alt="logo"></span>
+            <span class="name">Alumni-2-Undergrad</span>
         </div>
     </nav>
     <div class="page-container">
-
-       
         <div class="welcome-container">
             <h1>Welcome to A2U</h1>
             <p>We are happy to have you with us.</p>
         </div>
-    
-        
         <div class="form-container">  
-            <h3>This will help us provide you with best experience.</h3>
+            <h3>This will help us provide you with the best experience.</h3>
             <label>How would you describe yourself?</label>
-            <form action="">
+            <form id="roleForm">
                 <!-- Role selection -->
                 <div class="form-group">
                     <input type="radio" id="student" name="role" value="student">
@@ -33,19 +29,40 @@
                 </div>
                 <div class="form-group">
                     <input type="radio" id="alumni" name="role" value="alumni">
-                    <label for="teacher">Alumni</label><br>
+                    <label for="alumni">Alumni</label><br>
                 </div>
                 <div class="form-group">
                     <input type="radio" id="institution" name="role" value="institution">
-                    <label for="developer">Institution</label><br>
+                    <label for="institution">Institution</label><br>
                 </div>
-    
-                
-                <button class="submit-btn" type="submit">Continue</button>
+                <button class="submit-btn" type="button" id="continueButton">Continue</button>
             </form>
-    
         </div>
     </div>
-    
+    <script>
+        document.getElementById("continueButton").addEventListener("click", function () {
+            // Get the selected role
+            const selectedRole = document.querySelector('input[name="role"]:checked');
+            if (selectedRole) {
+                // Redirect based on the selected role
+                switch (selectedRole.value) {
+                    case "student":
+                        window.location.href = "reg_stu1.html";
+                        break;
+                    case "alumni":
+                        window.location.href = "reg_alu.html";
+                        break;
+                    case "institution":
+                        window.location.href = "";
+                        break;
+                    default:
+                        alert("Please select a valid role.");
+                }
+            } else {
+                // Alert if no role is selected
+                alert("Please select a role before continuing.");
+            }
+        });
+    </script> 
 </body>
 </html>
