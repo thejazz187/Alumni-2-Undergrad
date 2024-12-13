@@ -162,7 +162,7 @@ nav .name {
 
 @media (max-width: 480px) {
     nav {
-        flex-direction: column; /* Stack nav elements */
+        flex-direction: column; 
         text-align: center;
     }
 
