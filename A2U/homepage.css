@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;300;400;700;900&display=swap'); /* Add Noto Serif Display import */
+
+/* Apply global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  /* Prevent overflow due to padding and borders */
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #020d1c;
+}
+
+/* Main section */
+.main {
+    background-image: url("assets/hmpg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; /* Fill the entire viewport height */
+    width: 100%; /* Full width */
+    position: relative;
+}
+
+/* Black overlay box */
+.main .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* Same height as the main section */
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent overlay */
+    z-index: 1; /* Stay below other content */
+}
+
+/* Navigation Bar */
+nav {
+    max-width: 80vw;  /* Ensure it doesn't cause overflow */
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 60px;  /* Adjust height to bring elements closer */
+    position: relative; /* Position relative to keep the nav above background */
+    z-index: 10; /* Ensure the nav appears above the overlapping background */
+}
+
+nav .lg {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduced gap between logo and name */
+}
+
+nav .logo img {
+    height: 50px; /* Responsive logo size */
+    width: auto; /* Maintain aspect ratio */
+}
+
+nav .name {
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 5px; /* Reduced margin to bring name closer to logo */
+}
+
+.nav-btn {
+    display: flex;
+    gap: 8px; /* Reduced gap between buttons */
+}
+
+.nav-btn button {
+    padding: 8px 15px;
+    border: 1px solid #0C0424;
+    border-radius: 5px;
+    background-color: #0C0424;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.nav-btn button:hover {
+    background-color: #5ce1e6;
+    border-color: #0056b3;
+}
+
+.container{
+    padding-top: 10%;
+}
+/* Moto Section */
+.moto {
+    position: relative;
+    text-align: center;
+    color: #5ce1e6;
+    line-height: 1.2;
+    font-size: 3vw; /* Scales with viewport width */
+    font-weight: 900;
+    z-index: 2; /* Above the overlay box */
+    padding: 20px;
+}
+
+
+/* Info Section */
+.info {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    width: 80%; /* Restrict width for readability */
+    margin: 0 auto; /* Center content */
+    font-size: 1.2vw; /* Scales with viewport width */
+    line-height: 1.5;
+    z-index: 2;
+}
+/* Buttons below Info Section */
+.start {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between buttons */
+    margin-top: 20px;
+    position: relative; /* Keep buttons above the overlay */
+    z-index: 3; /* Ensures the buttons appear above the image and overlay */
+}
+
+.start button {
+    padding: 10px 22px; /* Slightly larger buttons */
+    border: 2px solid #00e2f0; /* White border to contrast with background */
+    border-radius: 10px; /* Smooth, rounded edges */
+    font-size: 1.0rem; /* Ensure readability */
+    color: #00e2f0; /* Button text color */
+    background-color: transparent; /* Stand-out background */
+    cursor: pointer;
+    transition: transform 0.6s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.start button:hover {
+    color: #0C0424;
+    background-color: #00e2f0; /* Change background for emphasis */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .name {
+        font-size: 16px;
+    }
+
+    .moto {
+        font-size: 5vw;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+
+    .start button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column; /* Stack nav elements */
+        text-align: center;
+    }
+
+    .nav-btn {
+        flex-direction: column;
+        gap: 5px; /* Reduced gap */
+    }
+
+    .moto {
+        font-size: 6vw;
+        padding: 10px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .start button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+.title {
+    color: #00e2f0;
+    position: relative;
+    text-align: center;
+    padding: 65px;
+    padding-bottom: 160px;
+    font-size: 55px;
+    height: 60px;
+    align-items: center;
+
+}
+.ef {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+    gap: 70px;
+    padding-bottom: 120px;
+    color: #FFFFFF;
+}
+
+.rows1, .rows2, .rows3, .rows4 {
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-column {
+    width: 58%;
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.right-column {
+    width: 38%;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.left-columni {
+    width: 38%;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+}
+
+.left-columni img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 5px;
+}
+
+.right-columni {
+    width: 58%;
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 30px;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.right-column img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+    .ef {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .rows1, .rows2, .rows3, .rows4 {
+        flex-direction: column; /* Stack rows vertically on smaller screens */
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .left-column, .right-column {
+        width: 100%;  /* Full width for both columns */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .left-columni, .right-columni {
+        width: 100%; /* Columns will take full width */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ef {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .rows1, .rows2, .rows3, .rows4 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .left-column, .right-column {
+        width: 100%; /* Full width for both columns */
+        padding: 10px;
+    }
+
+    .left-columni, .right-columni {
+        width: 100%; /* Columns will take full width */
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .left-columni img, .right-column img {
+        width: 100%; /* Ensure images scale properly */
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ef {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .rows1, .rows2, .rows3, .rows4 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .left-column, .right-column {
+        width: 100%; /* Full width for both columns */
+        padding: 5px;
+    }
+
+    .left-columni, .right-columni {
+        width: 100%; /* Columns will take full width */
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .left-columni img, .right-column img {
+        width: 100%; /* Ensure images scale properly */
+        height: auto;
+    }
+}
