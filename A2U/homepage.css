@@ -13,6 +13,9 @@
 body{
     background-color: #020d1c;
 }
+html, body {
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+}
 
 /* Main section */
 .main {
@@ -162,7 +165,7 @@ nav .name {
 
 @media (max-width: 480px) {
     nav {
-        flex-direction: column; 
+        flex-direction: column; /* Stack nav elements */
         text-align: center;
     }
 
@@ -205,7 +208,6 @@ nav .name {
     padding-right: 100px;
     justify-content: space-between;
     gap: 70px;
-    padding-bottom: 120px;
     color: #FFFFFF;
 }
 
@@ -354,3 +356,152 @@ nav .name {
         height: auto;
     }
 }
+.table-container {
+    display: block;  /* Ensure the table container is a block element */
+    margin-top: 0;    /* Remove any margin above the table */
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto; /* Center the container horizontally */
+    width: 100%;        /* Adjust the container width if necessary */
+    background-color: #FFFFFF;
+}
+
+table {
+    border-collapse: collapse;  /* Merge the borders of the table cells */
+    width: 100%;  /* Ensure the table takes the full width of its container */
+}
+
+th, td {
+    text-align: center;  /* Center content inside cells */
+    padding: 10px; /* Remove padding to allow the image to fill the cell */
+    width: 33.33%; /* Make sure each cell takes up equal width (3 cells per row, adjust as needed) */
+    height: 200px;  /* Set a fixed height for all cells */
+}
+
+.cimg {
+    width: 100%;  /* Make image take up the full width of the cell */
+    height: 100%;  /* Make image take up the full height of the cell */
+    object-fit:scale-down;  /* Ensure the image fills the cell without distortion */
+}
+
+.clist {
+    position: relative;
+    text-align: center;  /* Center the text horizontally */
+    color: #000000;  /* Text color */
+
+    padding-bottom: 25px;  /* Padding around the heading */
+    padding-top: 15px;
+    height: auto;  /* Auto-adjust height based on content */
+}
+
+  /* Carousel Container */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+    height: 250px;
+    padding-bottom: 20px;
+  }
+  
+  /* Carousel Inner */
+  .carousel {
+    display: flex; /* Flex container for the slides */
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ensure it takes full width */
+    height: 100%; /* Match height of container */
+  }
+  
+  /* Carousel Item */
+  .carousel-item {
+    min-width: 100%; /* Each item takes full width */
+    
+    padding: 2rem;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 0 5px 15px rgba(0, 224, 165, 0.2);
+    color: #fff; /* Ensure text visibility */
+    font-size: 1.2rem;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  
+  /* Navigation Dots Container */
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-bottom: 30px; /* Reduced padding for better spacing */
+  }
+  
+  /* Navigation Dots */
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 05px;
+    background-color: aliceblue;
+    border: 2px solid rgb(0, 224, 165); /* Proper border styling */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Active Dot */
+  .dot.active {
+    background-color: #00e0a5; /* Active dot color */
+}
+
+.footer {
+    background-color: transparent;
+    border-top: #00e0a5;
+    border-color: #00e0a5;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+.footer-content {
+    max-width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 10px;
+    min-width: 150px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-right a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+.footer-right a img {
+    width: 50px; /* Adjust this size as needed */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 8px; /* Spacing between icons */
+}
+
+
+.footer-right a:hover {
+    transform: scale(1.7);
+}
+
