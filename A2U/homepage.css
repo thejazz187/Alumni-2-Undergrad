@@ -524,6 +524,43 @@ th, td {
     background-color: #00e0a5; /* Active dot color */
 }
 
+/* Greyscale Effect for Cards */
+.card {
+    filter: grayscale(100%); /* Apply greyscale */
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth hover effect */
+    background-color: #f8f9fa; /* Light grey background for contrast */
+    border: 1px solid #e0e0e0; /* Soft grey border */
+}
+
+/* On Hover: Restore Color and Add Scale Effect */
+.card:hover {
+    filter: grayscale(0%); /* Restore original colors */
+    transform: translateY(-10px); /* Add a lift effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Add subtle shadow */
+}
+
+/* Button Styling for Consistency */
+.card .btn {
+    border-radius: 25px; /* Rounded buttons for a modern look */
+    font-weight: bold;
+}
+
+/* Header and Text Adjustments */
+.card-header {
+    background-color: #e9ecef; /* Subtle grey for header */
+    border-bottom: 1px solid #dee2e6;
+}
+
+.card-title, .card-header h4 {
+    color: #495057; /* Neutral grey for titles */
+}
+
+.card ul {
+    color: #6c757d; /* Muted grey for list items */
+}
+
+
+
 .footer {
     background-color: transparent;
     border-top: #00e0a5;
