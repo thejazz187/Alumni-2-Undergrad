@@ -442,80 +442,63 @@ th, td {
     height: auto;  /* Auto-adjust height based on content */
 }
 
-  /* Carousel Container */
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column; /* Vertical alignment */
-    height: 250px;
-    padding-bottom: 20px;
-  }
-  
   /* Carousel Inner */
-  .carousel {
+.carousel {
     display: flex; /* Flex container for the slides */
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out; /* Smooth slide transition */
     width: 100%; /* Ensure it takes full width */
-    height: 100%; /* Match height of container */
-  }
-  
-  /* Carousel Container */
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column; /* Vertical alignment */
-    height: 250px;
-    padding-bottom: 20px;
-    background-color: transparent;
-  }
-  
-  /* Carousel Inner */
-  .carousel {
-    display: flex; /* Flex container for the slides */
-    transition: transform 0.5s ease-in-out;
-    width: 100%; /* Ensure it takes full width */
-    height: auto; /* Match height of container */
-  }
-  
-  /* Carousel Item */
-  .carousel-item {
+    height: auto; /* Automatically adjust height based on content */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* Carousel Item */
+.carousel-item {
     min-width: 100%; /* Each item takes full width */
     border-radius: 15px;
-    text-align: center;
-    padding: 2rem;
     display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: row; /* Horizontal layout for columns */
-    justify-content: space-between; /* Distribute columns evenly */
-    align-items: flex-start; /* Align items at the top */
+    flex-direction: row; /* Horizontal layout for image and text */
+    justify-content: space-between; /* Distribute image and text evenly */
+    align-items: center; /* Vertically align image and text */
+    padding: 2rem;
+    gap: 1rem; /* Space between image and text */
     background-color: transparent;
     color: #fff; /* Ensure text visibility */
     font-size: 1rem;
+    height: auto; /* Automatically adjust height */
     box-sizing: border-box; /* Include padding in width calculation */
-    gap: 1rem; /* Space between columns */
 }
-.txt{
+
+/* Text Section */
+.txt {
     width: 50%;
     padding: 50px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-sizing: border-box;
-    height: auto;
-  }
-  .img{
-    
-    width: 50%;
-    height: 500px;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center text content vertically */
+    text-align: center; /* Align text to the left */
+    box-sizing: border-box; /* Include padding in width calculation */
+    height: auto; /* Automatically adjust height */
+}
 
-  }
+/* Image Section */
+.img {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    box-sizing: border-box; /* Include padding in width calculation */
+    height: auto; /* Automatically adjust height */
+}
+
+/* Graphics (Image) */
+.graphics {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    max-height: 100%; /* Ensure image doesn't exceed container height */
+    object-fit: contain; /* Preserve aspect ratio and prevent cropping */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
 
   
   /* Navigation Dots Container */
@@ -531,7 +514,6 @@ th, td {
     height: 12px;
     width: 12px;
     margin: 05px;
-    background-color: aliceblue;
     border: 2px solid rgb(0, 224, 165); /* Proper border styling */
     border-radius: 50%;
     cursor: pointer;
