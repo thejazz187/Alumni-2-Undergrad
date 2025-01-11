@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Function to show a specific slide
   function showSlide(index) {
     currentIndex = (index + totalSlides) % totalSlides; // Ensure wrapping
+
+
+    
     const offset = currentIndex * 100; // Calculate offset
     carousel.style.transform = `translateX(-${offset}%)`; // Slide
     updateDots();
